@@ -8,6 +8,14 @@ class PrototypeController extends Controller
 {
     public function calculate(Request $request)
     {
+        // Validate user inputs
+        $validated = $request->validate([
+            'length' => 'required|numeric|gt:0',
+            'height' => 'required|numeric|gt:0',
+            'thickness' => 'required|numeric|gt:0',
+        ]);
+        
+
         // 1. Get scalar inputs from form
         $length = floatval($request->input('length'));
         $height = floatval($request->input('height'));
