@@ -69,37 +69,37 @@
             </tr>
             <tr>
                 <td>Direct Material Cost</td>
-                <td style="text-align: right;">₱{{ number_format($materialCost, 2) }}</td>
+                <td style="text-align: right;">{{ number_format($materialCost, 2) }}</td>
                 <td>PHP</td>
             </tr>
             <tr>
                 <td>Direct Labor Cost</td>
-                <td style="text-align: right;">₱{{ number_format($laborCost, 2) }}</td>
+                <td style="text-align: right;">{{ number_format($laborCost, 2) }}</td>
                 <td>PHP</td>
             </tr>
             <tr style="font-weight: bold;">
                 <td>Direct Cost Subtotal</td>
-                <td style="text-align: right;">₱{{ number_format($directCost, 2) }}</td>
+                <td style="text-align: right;">{{ number_format($directCost, 2) }}</td>
                 <td>PHP</td>
             </tr>
             <tr>
                 <td>OCM (12%)</td>
-                <td style="text-align: right;">₱{{ number_format($ocm, 2) }}</td>
+                <td style="text-align: right;">{{ number_format($ocm, 2) }}</td>
                 <td>PHP</td>
             </tr>
             <tr>
                 <td>Contractor Profit (8%)</td>
-                <td style="text-align: right;">₱{{ number_format($profit, 2) }}</td>
+                <td style="text-align: right;">{{ number_format($profit, 2) }}</td>
                 <td>PHP</td>
             </tr>
             <tr>
                 <td>Value-Added Tax (12%)</td>
-                <td style="text-align: right;">₱{{ number_format($vat, 2) }}</td>
+                <td style="text-align: right;">{{ number_format($vat, 2) }}</td>
                 <td>PHP</td>
             </tr>
             <tr style="font-weight: bold; background: #e6ffe6;">
                 <td>Final Estimated Contracting Fee</td>
-                <td style="text-align: right;">₱{{ number_format($finalFee, 2) }}</td>
+                <td style="text-align: right;">{{ number_format($finalFee, 2) }}</td>
                 <td>PHP</td>
             </tr>
         </tbody>
